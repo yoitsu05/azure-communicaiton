@@ -5,7 +5,7 @@ let call;
 const calleeInput = document.getElementById('callee-id-input');
 const callButton = document.getElementById('call-button');
 const hangUpButton = document.getElementById('hang-up-button');
-const { token } = './config.json';
+const { token } = require('./config.json');
 
 const callClient = new CallClient();
 const tokenCredential = new AzureCommunicationUserCredential(token);
